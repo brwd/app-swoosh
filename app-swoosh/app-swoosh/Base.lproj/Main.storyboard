@@ -31,7 +31,7 @@
                                 <rect key="frame" x="128" y="40" width="119" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in our city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKL-kw-q7b">
-                                <rect key="frame" x="-7.5" y="335" width="390" height="26"/>
+                                <rect key="frame" x="35.5" y="335" width="304" height="52"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -46,18 +46,21 @@
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wcf-0k-T8b" kind="show" id="ahM-Iw-9oJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwo-6P-XoQ">
-                                <rect key="frame" x="-7.5" y="175" width="390" height="83.5"/>
+                                <rect key="frame" x="35.5" y="175" width="304" height="83.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="374-7b-lXC"/>
+                                    <constraint firstAttribute="width" constant="304" id="374-7b-lXC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="61"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azY-8g-g3r">
-                                <rect key="frame" x="-7.5" y="259" width="390" height="41"/>
+                                <rect key="frame" x="35.5" y="259" width="304" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -114,7 +117,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-Xb-9Sa">
                                         <rect key="frame" x="62.5" y="95" width="250" height="26"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="My0-bz-abv"/>
                                             <constraint firstAttribute="width" constant="250" id="gcc-oH-UeC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
@@ -176,6 +178,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12g-89-By9">
+                                <rect key="frame" x="16" y="30" width="46" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Mso-fn-Q6s"/>
+                                    <constraint firstAttribute="height" constant="32" id="q8B-sR-mCD"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="Lgl-1f-0ab" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="DyO-bQ-f4T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -183,8 +196,10 @@
                             <constraint firstItem="rCB-ea-EWG" firstAttribute="bottom" secondItem="tmw-3i-tr5" secondAttribute="bottom" constant="20" id="7ov-cA-izB"/>
                             <constraint firstItem="rCB-ea-EWG" firstAttribute="trailing" secondItem="tmw-3i-tr5" secondAttribute="trailing" constant="16" id="DUH-nE-WtK"/>
                             <constraint firstItem="ihW-Bb-3vx" firstAttribute="bottom" secondItem="rCB-ea-EWG" secondAttribute="bottom" id="ELs-o1-82g"/>
+                            <constraint firstItem="12g-89-By9" firstAttribute="top" secondItem="V0q-W5-oqM" secondAttribute="top" constant="30" id="M0t-Pc-yJO"/>
                             <constraint firstItem="tmw-3i-tr5" firstAttribute="leading" secondItem="rCB-ea-EWG" secondAttribute="leading" constant="16" id="Oav-si-bDs"/>
                             <constraint firstItem="Dyi-2v-Dxu" firstAttribute="leading" secondItem="rCB-ea-EWG" secondAttribute="leading" constant="16" id="QsP-gj-AOi"/>
+                            <constraint firstItem="12g-89-By9" firstAttribute="leading" secondItem="rCB-ea-EWG" secondAttribute="leading" constant="16" id="iwS-o8-cDN"/>
                             <constraint firstItem="ihW-Bb-3vx" firstAttribute="top" secondItem="V0q-W5-oqM" secondAttribute="top" id="lOe-MV-JOp"/>
                             <constraint firstItem="Dyi-2v-Dxu" firstAttribute="top" secondItem="skk-Ts-c2Y" secondAttribute="bottom" constant="35" id="o2V-QO-CtX"/>
                             <constraint firstItem="skk-Ts-c2Y" firstAttribute="leading" secondItem="rCB-ea-EWG" secondAttribute="leading" id="p7S-U3-t66"/>
@@ -197,6 +212,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZR-hi-91N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lgl-1f-0ab" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="805.60000000000002" y="133.5832083958021"/>
         </scene>
@@ -217,7 +233,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-mM-dfw">
                                 <rect key="frame" x="62.5" y="135" width="250" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="OYY-3h-OgF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="hbY-l3-fw4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
@@ -289,6 +304,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>

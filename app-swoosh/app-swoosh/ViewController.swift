@@ -19,11 +19,12 @@ class ViewController: UIViewController {
         
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // created the function to enable the back button on 2nd screen
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        
     }
+    
+    
 
 
 }
