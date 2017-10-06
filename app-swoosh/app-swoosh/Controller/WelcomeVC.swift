@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
-    
     @IBOutlet weak var swooshLogo: UIImageView!
     @IBOutlet weak var bgImg: UIImageView!
     
