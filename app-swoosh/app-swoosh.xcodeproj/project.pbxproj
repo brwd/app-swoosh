@@ -14,6 +14,7 @@
 		AD44BEF51F85681C0027C80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD44BEF31F85681C0027C80A /* LaunchScreen.storyboard */; };
 		AD70CECD1F880427002B8562 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70CECC1F880427002B8562 /* LeagueVC.swift */; };
 		AD70CECF1F880436002B8562 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70CECE1F880436002B8562 /* SkillVC.swift */; };
+		AD70CED11F88317F002B8562 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70CED01F88317F002B8562 /* Player.swift */; };
 		ADC45BCA1F856DD700A62D3E /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC45BC91F856DD700A62D3E /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		AD44BEF61F85681C0027C80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD70CECC1F880427002B8562 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		AD70CECE1F880436002B8562 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		AD70CED01F88317F002B8562 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		ADC45BC91F856DD700A62D3E /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 		AD70CECB1F880305002B8562 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD70CED01F88317F002B8562 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				AD70CECD1F880427002B8562 /* LeagueVC.swift in Sources */,
 				AD44BEEB1F85681C0027C80A /* AppDelegate.swift in Sources */,
 				AD70CECF1F880436002B8562 /* SkillVC.swift in Sources */,
+				AD70CED11F88317F002B8562 /* Player.swift in Sources */,
 				ADC45BCA1F856DD700A62D3E /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
