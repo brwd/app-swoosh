@@ -22,6 +22,7 @@ class LeagueVC: UIViewController {
 
     }
     // try to never have logic in IBActions, instead see function below
+    // IBAction is setup to allow UIelements to be activated by touch,etc...
     @IBAction func userTappedNext(_ sender: Any) {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
@@ -42,6 +43,13 @@ class LeagueVC: UIViewController {
     func selectLeague(leagueType: String) {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
+    }
+    
+    //passing data from LeagueVC to SkillVC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
     }
     
 
